@@ -1,0 +1,8 @@
+Gene	Control	Injured
+Calm1	839.04	536.28
+Stc2	1.015	7.585
+Cacng1	1.505	17.64
+Stx8	32.795	23.07
+Camk2a	0.68	0.28
+Casq2	66.845	36.915
+Clic4	278.445	283.18

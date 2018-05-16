@@ -1,0 +1,16 @@
+Gene	Control	Injured
+Rapsn	18.095	21.86
+Prkar1a	235.635	218.19
+Stx8	32.795	23.07
+Camk2a	0.68	0.28
+Chrng	0.475	1.005
+Plxna2	4.86	4.99
+Chrna1	9.47	9.655
+Nbea	4.695	3.165
+Tnc	15.205	93.275
+Cdk5	16.265	18.015
+Vamp1	1.17	0.93
+Sema6c	3.975	2.195
+Sema3d	16.71	4.95
+Chrnb1	46.55	46.41
+Musk	12.995	7.49

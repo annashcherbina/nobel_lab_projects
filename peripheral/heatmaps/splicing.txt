@@ -1,0 +1,4 @@
+Gene	Control	Injured
+Sart3	5.32	8.405
+Gar1	45.275	32.37
+Snrpa	21.785	31.11

@@ -1,0 +1,5 @@
+Gene	Control	Injured
+Mcm2	2.7	4.36
+Ercc1	16.955	25.5
+Poli	2.41	2.315
+Xrcc1	11.515	21.14

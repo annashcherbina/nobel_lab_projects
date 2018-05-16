@@ -1,0 +1,7 @@
+Gene	Control	Injured
+Ngfr	1.04	13.4
+Nrcam	4.37	20.165
+Gdnf	2.29	8.425
+Olig1	1.125	15.86
+Tubb3	0.98	23.985
+Srrm4os	0.29	6.06

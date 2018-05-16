@@ -1,0 +1,6 @@
+Gene	Control	Injured
+Matn2	140.605	165.655
+Anxa5	450.69	616.34
+Tnc	15.205	93.275
+Mfap1b	25.325	26.33
+Mfap1a	12.46	12.785

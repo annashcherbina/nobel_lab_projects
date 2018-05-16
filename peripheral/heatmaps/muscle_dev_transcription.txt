@@ -1,0 +1,9 @@
+Gene	Control	Injured
+Mef2c	66.07	54.295
+Ankrd1	25.34	47.575
+Ankrd2	1.155	71.02
+Eya1	3.36	3.205
+Myog	8.845	15.555
+Smyd1	0.165	0.89
+Naca	298.48	242.095
+Hes6	5.065	10.335
