@@ -1,0 +1,24 @@
+
+d0_Old_R1	/home/annashch/nas/Age_RNASeq/Run_2081//Run_2081/MuSC_d0_Old_RSEM_OUTPUT/rsem.quant.genes.results
+d0_Old_R2	/home/annashch/Run_2278/MuSC_d0_old_16K_R2_RSEM_OUTPUT/rsem.quant.genes.results
+d0_S_KO_R1	/home/annashch/Run_2278/MuSC_d0_S_KO_17K_R1_RSEM_OUTPUT/rsem.quant.genes.results
+d0_S_KO_R2	/home/annashch/Run_2278/MuSC_d0_S_K0_17K_R2_RSEM_OUTPUT/rsem.quant.genes.results
+d0_WT_R1	/home/annashch/Run_2278/MuSC_d0_WT_16K_R1_RSEM_OUTPUT/rsem.quant.genes.results
+d0_WT_R2	/home/annashch/Run_2278/MuSC_d0_WT_16K_R2_RSEM_OUTPUT/rsem.quant.genes.results
+d0_Y_R1	/home/annashch/nas/Age_RNASeq/Run_2081//Run_2081/MuSC_d0_Y_Rep1_RSEM_OUTPUT/rsem.quant.genes.results
+d0_Y_R2	/home/annashch/nas/Age_RNASeq/Run_2081//Run_2081/MuSC_d0_Y_Rep2_RSEM_OUTPUT/rsem.quant.genes.results
+d0_Y_R3	/home/annashch/nas/Age_RNASeq/Run_2081//Run_2081/MuSC_d0_Y_Rep3_RSEM_OUTPUT/rsem.quant.genes.results
+d0_Y_R4	/home/annashch/nas/Age_RNASeq/Run_2081//Run_2081/MuSC_d0_Y_RSEM_OUTPUT/rsem.quant.genes.results
+d1_Old_R1	/home/annashch/Run_2278/MuSC_d1_Old_10K_R1_RSEM_OUTPUT/rsem.quant.genes.results
+d1_Old_R2	/home/annashch/Run_2278/MuSC_d1_Old_16K_R2_RSEM_OUTPUT/rsem.quant.genes.results
+d1_Y_R1	/home/annashch/nas/Age_RNASeq/Run_2081//Run_2081/MuSC_d1_Y_RSEM_OUTPUT/rsem.quant.genes.results
+d1_Y_R2	/home/annashch/Run_2278/MuSC_d1_Y_10K_R2_RSEM_OUTPUT/rsem.quant.genes.results
+d21_S_KO_R1	/home/annashch/Run_2278/MuSC_d21_S_KO_25K_R1_RSEM_OUTPUT/rsem.quant.genes.results
+d21_S_KO_R2	/home/annashch/Run_2278/MuSC_d21_S_KO_20K_R2_RSEM_OUTPUT/rsem.quant.genes.results
+d21_WT_R1	/home/annashch/Run_2278/MuSC_d21_WT_34K_R2_RSEM_OUTPUT/rsem.quant.genes.results
+d2_Y_R1	/home/annashch/nas/Age_RNASeq/Run_2081//Run_2081/MuSC_d2_Y_RSEM_OUTPUT/rsem.quant.genes.results
+d3_Old_R1	/home/annashch/nas/Age_RNASeq/Run_2081//Run_2081/MuSC_d3_Old_RSEM_OUTPUT/rsem.quant.genes.results
+d3_Y_R1	/home/annashch/nas/Age_RNASeq/Run_2081//Run_2081/MuSC_d3_Y_RSEM_OUTPUT/rsem.quant.genes.results
+d5_Old_R1	/home/annashch/nas/Age_RNASeq/Run_2081//Run_2081/MuSC_d5_Old_RSEM_OUTPUT/rsem.quant.genes.results
+d5_Y_R1	/home/annashch/nas/Age_RNASeq/Run_2081//Run_2081/MuSC_d5_Y_RSEM_OUTPUT/rsem.quant.genes.results
+d7_Old	/home/annashch/Run_2278/MuSC_d7_Old_5K_R1_RSEM_OUTPUT/rsem.quant.genes.results
