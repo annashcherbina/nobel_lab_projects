@@ -18,6 +18,8 @@ for line in data[1::]:
     filtered=tokens[1]+','+tokens[3]+','+tokens[4]+','+tokens[6]
     filtered=filtered.replace(',','\t')
     filtered=filtered+'\t'+','.join(gene_names)
+    while '\t\t' in filtered:
+        filtered.replace('\t\t','\t')
     outf.write(filtered+'\n')
     
     
