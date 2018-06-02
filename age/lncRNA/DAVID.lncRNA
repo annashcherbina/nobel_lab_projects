@@ -1,0 +1,2 @@
+"Category","Term","Count","X.","PValue","Genes","List.Total","Pop.Hits","Pop.Total","Fold.Enrichment","Bonferroni","Benjamini","FDR"
+"GOTERM_BP_FAT","GO:0006349~regulation of gene expression by genetic imprinting",3,1.54639175257732,7.39187962116848e-05,"ENSMUSG00000101609, ENSMUSG00000078247, ENSMUSG00000086503",14,18,17911,213.22619047619,0.0196160218277264,0.0196160218277264,0.0970338156375927
