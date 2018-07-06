@@ -26,3 +26,5 @@ done
 paste counts.*.txt > age.atac.counts.txt
 #clean up temporary files 
 rm counts.*.txt
+paste naive_overlap.optimal_set.sorted.merged.bed age.atac.counts.txt > tmp
+mv tmp age.atac.counts.txt 
