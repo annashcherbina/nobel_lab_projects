@@ -10,7 +10,8 @@ for day in days :
     for line in diff_peaks[1::]:
         tokens=line.split('\t')
         peak=tokens[-1].replace('_','\t').strip('"')
-        peaks.add(peak) 
+        peaks.add(peak)
+        print(peak)
         if float(tokens[0])>0:
             #up
             diff_dict[day]['up'][peak]=1
@@ -22,6 +23,7 @@ outf.write('Chrom\tStart\tEnd')
 for day in days:
     outf.write('\t'+str(day)+'_up'+'\t'+str(day)+'_down')
 outf.write('\n')
+print(str(len(peaks)))
 for peak in peaks:
     outf.write(peak)
     for day in days:
