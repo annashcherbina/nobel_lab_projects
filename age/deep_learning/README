@@ -1,0 +1,16 @@
+Order of execution: 
+
+prepare_dl_inputs.sh
+sample_genome_randomly.sh
+(append the sampled sequences to the training dataset)
+gen_dinucleotide_freqs.sh	
+extract_dinuc_balanced_indices.sh
+shuffle.sh
+subset_valid_and_test.sh
+train_single_task.sh
+predict_single_task.sh		
+
+
+
+
+
