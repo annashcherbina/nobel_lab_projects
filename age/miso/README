@@ -1,0 +1,12 @@
+Order of operations: 
+
+merge_reps.sh
+run_miso.sh
+compare_miso.sh
+filter_comparisons.sh
+get_gene_mappings.sh
+plot_miso.sh
+
+
+
+
