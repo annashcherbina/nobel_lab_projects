@@ -11,13 +11,17 @@ def main():
     args=parse_args()
     for i in range(len(args.input_f)):
         data=open(args.input_f[i],'r').read().strip().split('\n')
-        outf=open(args.out_dir+'/'+args.tasks[i]+'.bed','w')
+        outf_up=open(args.out_dir+'/'+args.tasks[i]+'.up.bed','w')
+        outf_down=open(args.out_dir+"/"+args.task[i]+'.down.bed','w')
         c=0
         for line in data:
             peak=line.split('\t')[-1].strip('\"').split('_')
             if len(peak)<3:
-                continue 
-            outf.write('\t'.join(peak)+'\t'+str(c)+'\t.\n')
+                continue
+            if line.startswith('-'):
+                outf_down.write('\t'.join(peak)+'\t'+str(c)+'\t.\n')
+            else:
+                outf_up.write('\t'.join(peak)+'\t'+str(c)+'\t.\n')
             c+=1
         
 
