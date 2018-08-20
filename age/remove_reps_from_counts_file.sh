@@ -4,7 +4,8 @@
 #       --out_f age.rna.counts.txt.expected_count.filtered  age.rna.counts.txt.fpkm.filtered  age.rna.counts.txt.tpm.filtered
 
 #ATAC-seq
-python ../utility/remove_reps_from_counts_file.py --to_remove d21_KO_Rep1 d21_KO_Rep2 d21_WT_Rep1 d21_WT_Rep2 d0_Old_Rep4 d0_Y_Rep3 d7_Y_Rep1 d5_Y_Rep2 \
+#d0_Old_Rep4 d0_Y_Rep3 d7_Y_Rep1 d5_Y_Rep2 \
+python ../utility/remove_reps_from_counts_file.py --to_remove d21_KO_Rep1 d21_KO_Rep2 d21_WT_Rep1 d21_WT_Rep2 \
        --source_f age.atac.counts.txt \
        --out_f age.atac.counts.txt.filtered
 
