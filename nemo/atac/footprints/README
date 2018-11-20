@@ -1,0 +1,10 @@
+1. scanMotifsGenome.pl
+2. intersect peaks with motifs
+3. ~/anna_utils/sequence_utils/pad.py to 200 bases for the motif /peak intersections
+4. get_tagalign_ends.sh
+   contract_bed.py
+5. get_coverage.sh
+6. summarize_coverage.sh
+   average_across_position.py
+7. plot_footprint.R
+
