@@ -4,7 +4,7 @@ python generate_tracks.py --pval_bigwigs /mnt/lab_data2/annashch/nobel_lab_proje
     --rna_bigwigs /mnt/lab_data2/annashch/nobel_lab_projects/age_V2/tracks/RNA_seq/rna.tracks.txt \
     --outf_fc_bigwig age_fc_bigwig.json \
     --outf_pval_bigwig age_pval_bigwig.json \
-    --mitra_prefix /srv/www/kundaje/annashch/age/ \
+    --mitra_prefix http://mitra.stanford.edu/kundaje/annashch/age/ \
     --prefix_to_drop_for_oak /mnt/lab_data2/annashch/nobel_lab_projects/age_V2/
 
 
