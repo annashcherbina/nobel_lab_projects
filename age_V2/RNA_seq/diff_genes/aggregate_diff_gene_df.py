@@ -11,7 +11,7 @@ def parse_args():
     parser.add_argument('--corrected_tpm_values')
     parser.add_argument('--out_averaged')
     parser.add_argument('--out_fold_change')
-    parser.add_argument('--pseudocount',type=float,default=1e-3)
+    parser.add_argument('--pseudocount',type=float,default=1e-2)
     return parser.parse_args()
 
 def get_diff_gene_names(diff_gene_files):
