@@ -1,0 +1,3 @@
+#findMotifsGenome.pl NEMO_vs_Both_Controls.bed mm9 ../results/homer/both_controls
+#findMotifsGenome.pl NEMO_Control_4.bed mm9 ../results/homer/control4
+annotatePeaks.pl NEMO_Control_4.bed mm9 -size 1000 -hist 10 -d ../Sample_89787_4/out/align/pooled_rep/NEMO_1.tag/  ../Sample_89787_5/out/align/pooled_rep/NEMO_2.tag/  ../Sample_89787_9/out/align/pooled_rep/Control.tag/  -m ../results/homer/control4/knownResults/known5.motif > tag.AP1

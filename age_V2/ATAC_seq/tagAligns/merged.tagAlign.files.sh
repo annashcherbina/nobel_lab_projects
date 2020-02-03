@@ -1,0 +1,11 @@
+scp annashch@141.212.150.35:/nas/homes/annashch/Age_ATAC/caper_out/atac/b4245fba-248f-4201-bd66-907bb8e97a85/call-pool_ta/execution/glob-199637d3015dccbe277f621a18be9eb4/MuSC_d0_Old_10K_R2_r1.merged.nodup.tn5.pooled.tagAlign.gz d0_A.pooled.tagAlign.gz
+scp annashch@141.212.150.35:/nas/homes/annashch/Age_ATAC/outputs/d1_Aged/cromwell-executions/atac/4eab35c7-3cb6-4836-834a-52aaf44300ce/call-pool_ta/execution/MuSC_d1_Old_10K_R2_r1.merged.nodup.tn5.pooled.tagAlign.gz d1_A.pooled.tagAlign.gz
+scp annashch@141.212.150.35:/nas/homes/annashch/Age_ATAC/caper_out/atac/c90f9517-fbd5-4d41-99b6-83a7a19fb0c6/call-pool_ta/execution/MuSC_d3_Old_25K_R1_r1.merged.nodup.tn5.pooled.tagAlign.gz d3_A.pooled.tagAlign.gz
+scp annashch@141.212.150.35:/nas/homes/annashch/Age_ATAC/outputs/d5_Aged/cromwell-executions/atac/cd51b1d5-c953-45a0-84e2-7c98de55808b/call-pool_ta/execution/MuSC_d5_Old_10K_R1_r1.merged.nodup.tn5.pooled.tagAlign.gz d5_A.pooled.tagAlign.gz 
+scp annashch@141.212.150.35:/nas/homes/annashch/Age_ATAC/caper_out/atac/3ddcf39f-fae6-479d-8cc1-0a670bfa72c6/call-pool_ta/execution/MuSC_d7_Old_10K_R1_r1.merged.nodup.tn5.pooled.tagAlign.gz d7_A.pooled.tagAlign.gz 
+scp annashch@141.212.150.35:/nas/homes/annashch/Age_ATAC/outputs/d7_Young/cromwell-executions/atac/e3042974-4252-4c53-85a4-e2f8a3af880d/call-pool_ta/execution/MuSC_d7_Y_10K_R1_r1.merged.nodup.tn5.pooled.tagAlign.gz d7_Y.pooled.tagAlign.gz
+scp annashch@141.212.150.35:/nas/homes/annashch/Age_ATAC/outputs/d5_Young/cromwell-executions/atac/13ba4ec6-4586-4521-bbb8-a9f5cca58858/call-pool_ta/execution/MuSC_d5_Y_25K_R1_r1.merged.nodup.tn5.pooled.tagAlign.gz d5_Y.pooled.tagAlign.gz
+scp annashch@141.212.150.35:/nas/homes/annashch/Age_ATAC/caper_out/atac/0956918d-8f9f-4836-aaab-4bb310d915b9/call-pool_ta/execution/MuSC_d3_Y_25K_R1_r1.merged.nodup.tn5.pooled.tagAlign.gz d3_Y.pooled.tagAlign.gz 
+scp annashch@141.212.150.35:/nas/homes/annashch/Age_ATAC/outputs/d1_Young/cromwell-executions/atac/ae7e0583-b599-4f9d-b576-2d894bf69b5f/call-pool_ta/execution/MuSC_d1_Y_10K_R1_r1.merged.nodup.tn5.pooled.tagAlign.gz d1_Y.pooled.tagAlign.gz
+scp annashch@141.212.150.35:/nas/homes/annashch/Age_ATAC/outputs/d0_Young/cromwell-executions/atac/e373e737-4927-458b-b2cb-023ed08dd76e/call-pool_ta/execution/MuSC_d0_Y_10K_R1_r1.merged.nodup.tn5.pooled.tagAlign.gz d0_Y.pooled.tagAlign.gz
+

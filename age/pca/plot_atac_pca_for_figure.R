@@ -38,7 +38,14 @@ pca_vals$Day=day
 pca_vals$Age=age
 
 #remove replicates we don't want 
-pca_vals_filtered=pca_vals[!(rownames(pca_vals) %in% c("d0_Aged_Rep4","d0_Young_Rep2")),]
+pca_vals_filtered=pca_vals[!(rownames(pca_vals) %in% c("d0_Aged_Rep4","d0_Young_Rep2","d7_Young_Rep1","d0_Aged_Rep3","d1_Young_Rep1","d0_Aged_Rep1")),]
+
+library(plotly)
+p <- plot_ly(pca_vals_filtered, x = ~PC1, y = ~PC2, z = ~PC3, color = ~Day, symbol = ~Age, colors=c('#1b9e77','#d95f02','#7570b3','#e7298a','#66a61e'),symbols=c("circle","square")) %>%
+  add_markers() %>%
+  layout(scene = list(xaxis = list(title = 'PC1'),
+                      yaxis = list(title = 'PC2'),
+                      zaxis = list(title = 'PC3')))
 
 #p1 vs p2 
 ggplot(data=pca_vals_filtered,
@@ -49,7 +56,7 @@ ggplot(data=pca_vals_filtered,
   xlab("PC1")+
   ylab("PC2")+
   scale_color_manual(values=c('#1b9e77','#d95f02','#7570b3','#e7298a','#66a61e'))+
-  theme_bw(20)
+   theme_bw(20)
 
 #pc2 vs pc3
 ggplot(data=pca_vals_filtered,

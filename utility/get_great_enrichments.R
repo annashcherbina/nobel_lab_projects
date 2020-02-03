@@ -1,13 +1,28 @@
 rm(list=ls())
-library(rGREAT)
-args <- commandArgs(TRUE)
-fname=args[1]
-taskname=args[2]
+tasks=c("d0_Y_vs_d0_O.down",
+        "d0_Y_vs_d0_O.up",
+        "d1_Y_vs_d1_O.up",
+        "d1_Y_vs_d1_O.down",
+        "d3_Y_vs_d3_O.up",
+        "d3_Y_vs_d3_O.down",
+        "d5_Y_vs_d5_O.up",
+        "d5_Y_vs_d5_O.down",
+        "d7_Y_vs_d7_O.up",
+        "d7_Y_vs_d7_O.down")
+#options(warn = -1)
+#suppressWarnings(suppressPackageStartupMessages(library(rGREAT)))
+library(rGREAT,quietly=TRUE)
+#args <- commandArgs(TRUE)
+#fname=args[1]
+#taskname=args[2]
 ## -------------------------------------------------------------------------------------------------
 set.seed(123)
+for(taskname in tasks){
+fname=paste(taskname,"bed",sep=".")
 bed=read.table(fname,header=FALSE,sep='\t')
 ------------------------------------
-job = submitGreatJob(bed,species="mm10",time_interval=30)
+#job<-submitGreatJob(bed,species="mm10",request_interval = 30)
+browser()  #necessary to avoid the job query timing out. Also from rstudio use ctl+shift+enter to execute with echo. 
 tb = getEnrichmentTables(job)
 names(tb)
 go_tables = getEnrichmentTables(job, category = c("GO"))
@@ -52,23 +67,4 @@ msigdb=msigdb[msigdb$Binom_Fold_Enrichment>1.5,]
 #combine all results 
 sig_results=rbind(panther,biocyc,msigdb,go_mol,go_proc,go_cell)
 write.csv(sig_results,file=paste(taskname,'great',sep='.'),quote=TRUE,sep='\t')
-
-
-## -------------------------------------------------------------------------------------------------
-#availableOntologies(job)
-#availableCategories(job)
-
-## ---- fig.width = 12, fig.height = 4, fig.align = 'center'----------------------------------------
-#par(mfrow = c(1, 3))
-#res = plotRegionGeneAssociationGraphs(job)
-#res[1:2, ]
-
-## ---- eval = FALSE--------------------------------------------------------------------------------
-#  plotRegionGeneAssociationGraphs(job, type = 1)
-
-## ---- fig.width = 12, fig.height = 4--------------------------------------------------------------
-#par(mfrow = c(1, 3))
-#res = plotRegionGeneAssociationGraphs(job, ontology = "GO Molecular Function",
-#    termID = "GO:0004984")
-#    res[1:2, ]
-
+}

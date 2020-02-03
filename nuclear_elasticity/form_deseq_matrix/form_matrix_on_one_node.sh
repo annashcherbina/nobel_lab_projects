@@ -25,13 +25,13 @@ do
     bedtools coverage -counts -a naive_overlap.optimal_set.sorted.merged.bed -b $cur_tagalign | cut -f4 >> counts.$cur_sample_name.txt
 done
 
-paste counts.*.txt > adpd.atac.counts.txt
+paste counts.*.txt > nuc.elast.atac.counts.txt
 #clean up temporary files                                                                                                                                                                                          
 
 echo -e $'chrom\tstart\tend' > index
 cat index naive_overlap.optimal_set.sorted.merged.bed > tmp1
-paste tmp1 adpd.atac.counts.txt > tmp2
-mv tmp2 adpd.atac.counts.txt
+paste tmp1 nuc.elast.atac.counts.txt > tmp2
+mv tmp2 nuc.elast.atac.counts.txt
 
 #clean up
 rm tmp1
