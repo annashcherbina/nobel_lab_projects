@@ -1,14 +1,14 @@
 #get a merged peak file
-rm naive_overlap.optimal_set.bed
-rm naive_overlap.optimal_set.sorted.bed
-rm naive_overlap.optimal_set.sorted.merged.bed
+#rm naive_overlap.optimal_set.bed
+#rm naive_overlap.optimal_set.sorted.bed
+#rm naive_overlap.optimal_set.sorted.merged.bed
 
-for peak_file in `cut -f2 atac.peaks.naiveo.age.txt`
-do
-    zcat $peak_file >> naive_overlap.optimal_set.bed 
-done
-bedtools sort -i naive_overlap.optimal_set.bed > naive_overlap.optimal_set.sorted.bed
-bedtools merge -i naive_overlap.optimal_set.sorted.bed > naive_overlap.optimal_set.sorted.merged.bed
+#for peak_file in `cut -f2 atac.peaks.naiveo.age.txt`
+#do
+#    zcat $peak_file >> naive_overlap.optimal_set.bed 
+#done
+#bedtools sort -i naive_overlap.optimal_set.bed > naive_overlap.optimal_set.sorted.bed
+#bedtools merge -i naive_overlap.optimal_set.sorted.bed > naive_overlap.optimal_set.sorted.merged.bed
 
 echo "generated merged peak file!"
 
