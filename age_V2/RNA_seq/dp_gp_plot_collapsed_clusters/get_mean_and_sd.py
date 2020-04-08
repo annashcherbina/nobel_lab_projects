@@ -1,9 +1,9 @@
 import pandas as pd
 data=pd.read_csv("filtered.zscores_cluster_specific_diff_genes_reps_averaged_fc.csv",header=0,sep='\t')
-data=data.drop(['Cluster','Gene','newCluster'],axis=1)
+data=data.drop(['Cluster','Gene'],axis=1)
 dmeans=dict() 
 dstdev=dict() 
-for i in range(1,11):
+for i in range(1,13):
     subset=data[data['filteredCluster']==i]
     cur_means=subset.mean(axis=0)
     cur_stdev=subset.std(axis=0)

@@ -32,6 +32,7 @@ rna_d7_aged=rna[rna.columns[rna.columns.str.contains(pat='d7_A')]].mean(axis=1)
 rna_d7_young=rna[rna.columns[rna.columns.str.contains(pat='d7_Y')]].mean(axis=1)
 rna_d7_fc=np.log2(abs(rna_d7_young/rna_d7_aged))
 
+
 genes=[i.lower() for i in list(rna['Gene'])]
 gene_df=pd.DataFrame([genes,rna_d0,rna_d0_fc,rna_d1,rna_d1_fc,rna_d3,rna_d3_fc,rna_d5,rna_d5_fc,rna_d7,rna_d7_fc])
 gene_df=gene_df.transpose()

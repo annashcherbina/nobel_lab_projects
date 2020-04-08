@@ -36,7 +36,7 @@ def main():
     #average across replicates 
     d0_Y=diff_gene_df.filter(regex="d0_Y_Rep").mean(axis=1)
     d0_A=diff_gene_df.filter(regex="d0_A_Rep").mean(axis=1)
-    d0_Y_Pax7=diff_gene_df.filter(regex="d0_Y_Pax7_Rep").mean(axis=1)
+    #d0_Y_Pax7=diff_gene_df.filter(regex="d0_Y_Pax7_Rep").mean(axis=1)
     d1_Y=diff_gene_df.filter(regex="d1_Y_Rep").mean(axis=1)
     d1_A=diff_gene_df.filter(regex="d1_A_Rep").mean(axis=1)
     d3_Y=diff_gene_df.filter(regex="d3_Y_Rep").mean(axis=1)
@@ -45,23 +45,33 @@ def main():
     d5_A=diff_gene_df.filter(regex="d5_A_Rep").mean(axis=1)
     d7_Y=diff_gene_df.filter(regex="d7_Y_Rep").mean(axis=1)
     d7_A=diff_gene_df.filter(regex="d7_A_Rep").mean(axis=1)
-    diff_subset=pd.concat([d0_Y,d0_A,d0_Y_Pax7,d1_Y,d1_A,d3_Y,d3_A,d5_Y,d5_A,d7_Y,d7_A],axis=1)
-    diff_subset.columns=['d0_Y','d0_A','d0_Y_Pax7','d1_Y','d1_A','d3_Y','d3_A','d5_Y','d5_A','d7_Y','d7_A']
-    diff_subset.to_csv(args.out_averaged+".with_Pax7",sep='\t',index=True)
-    diff_subset=diff_subset.drop('d0_Y_Pax7',axis=1)
+    d21_Y=diff_gene_df.filter(regex="d21_Y_Rep").mean(axis=1)
+    d21_A=diff_gene_df.filter(regex="d21_A_Rep").mean(axis=1)
+    
+    
+    #diff_subset=pd.concat([d0_Y,d0_A,d0_Y_Pax7,d1_Y,d1_A,d3_Y,d3_A,d5_Y,d5_A,d7_Y,d7_A,d21_Y,d21_A],axis=1)
+    #diff_subset.columns=['d0_Y','d0_A','d0_Y_Pax7','d1_Y','d1_A','d3_Y','d3_A','d5_Y','d5_A','d7_Y','d7_A','d21_Y','d21_A']
+    #diff_subset.to_csv(args.out_averaged+".with_Pax7",sep='\t',index=True)
+    #diff_subset=diff_subset.drop('d0_Y_Pax7',axis=1)
+    diff_subset=pd.concat([d0_Y,d0_A,d1_Y,d1_A,d3_Y,d3_A,d5_Y,d5_A,d7_Y,d7_A,d21_Y,d21_A],axis=1)
+    diff_subset.columns=['d0_Y','d0_A','d1_Y','d1_A','d3_Y','d3_A','d5_Y','d5_A','d7_Y','d7_A','d21_Y','d21_A']
     diff_subset.to_csv(args.out_averaged,sep='\t',index=True)
     
     #get the fold change
     d0_Y_vs_A=d0_Y/(d0_A+args.pseudocount)
-    d0_Y_Pax7_vs_A=d0_Y_Pax7/(d0_A+args.pseudocount)
+    #d0_Y_Pax7_vs_A=d0_Y_Pax7/(d0_A+args.pseudocount)
     d1_Y_vs_A=d1_Y/(d1_A+args.pseudocount)
     d3_Y_vs_A=d3_Y/(d3_A+args.pseudocount)
     d5_Y_vs_A=d5_Y/(d5_A+args.pseudocount)
     d7_Y_vs_A=d7_Y/(d7_A+args.pseudocount)
-    fc_subset=pd.concat([d0_Y_vs_A,d0_Y_Pax7_vs_A,d1_Y_vs_A,d3_Y_vs_A,d5_Y_vs_A,d7_Y_vs_A],axis=1)
-    fc_subset.columns=['d0_Y_vs_A','d0_Y_Pax7_vs_A','d1_Y_vs_A','d3_Y_vs_A','d5_Y_vs_A','d7_Y_vsA']
-    fc_subset.to_csv(args.out_fold_change+".with_Pax7",sep='\t',index=True)
-    fc_subset=fc_subset.drop('d0_Y_Pax7_vs_A',axis=1)
+    d21_Y_vs_A=d21_Y/(d21_A+args.pseudocount)
+    #fc_subset=pd.concat([d0_Y_vs_A,d0_Y_Pax7_vs_A,d1_Y_vs_A,d3_Y_vs_A,d5_Y_vs_A,d7_Y_vs_A,d21_Y_vs_A],axis=1)
+    #fc_subset.columns=['d0_Y_vs_A','d0_Y_Pax7_vs_A','d1_Y_vs_A','d3_Y_vs_A','d5_Y_vs_A','d7_Y_vs_A','d21_Y_vs_A']
+    #fc_subset.to_csv(args.out_fold_change+".with_Pax7",sep='\t',index=True)
+    #fc_subset=fc_subset.drop('d0_Y_Pax7_vs_A',axis=1)
+    fc_subset=pd.concat([d0_Y_vs_A,d1_Y_vs_A,d3_Y_vs_A,d5_Y_vs_A,d7_Y_vs_A,d21_Y_vs_A],axis=1)
+    fc_subset.columns=['d0_Y_vs_A','d1_Y_vs_A','d3_Y_vs_A','d5_Y_vs_A','d7_Y_vs_A','d21_Y_vs_A']
+
     fc_subset.to_csv(args.out_fold_change,sep='\t',index=True)
   
 if __name__=="__main__":

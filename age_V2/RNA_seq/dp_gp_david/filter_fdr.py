@@ -1,4 +1,4 @@
-for i in range(1,22):
+for i in range(1,17):
     data=open(str(i)+'.DAVID.txt','r').read().strip().split('\n')
     outf=open(str(i)+'.DAVID.fdr0.05.txt','w')
     outf.write(data[0]+'\n')
