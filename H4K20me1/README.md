@@ -1,10 +1,10 @@
-#Fastqs are in:
+# Fastqs are in:
 
 `/nas/homes/annashch/H4K20me1/*gz`
 
 
-#Run FASTQC on raw fastq's
+# Run FASTQC on raw fastq's
 
 fastqc /nas/homes/annashch/H4K20me1/*gz
 
-#Run cutadapt to trim nextera adapter & to trim reads to 76bp
+# Run cutadapt to trim nextera adapter & to trim reads to 76bp
