@@ -1,0 +1,12 @@
+
+1) get_5p_counts.sh
+
+
+2) get_tss_dist.sh
+#calculates distance between overlap peaks and closest tss 
+
+3) get_tss_with_near_peak.py
+#filter tss to those with a peak within 5kb
+
+4) make_heatmap.sh
+
