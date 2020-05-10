@@ -8,7 +8,7 @@ computeMatrix reference-point --samplesLabel "Aged" "Young" \
 	      --binSize 200 \
 	      --averageTypeBins mean
 
-plotHeatmap --colorMap RdBu --regionsLabel "Shared" "Young Only" "Aged Only"  -m h4k20me1.mat.gz -out h4k20me1.svg  --heatmapHeight 10 --legendLocation best
+plotHeatmap --colorMap RdBu --regionsLabel "Shared" "Young Only" "Aged Only"  -m h4k20me1.mat.gz -out h4k20me1.seacr.svg  --heatmapHeight 10 --legendLocation best
 
 
 
