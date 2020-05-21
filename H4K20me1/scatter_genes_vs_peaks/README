@@ -1,0 +1,20 @@
+Mus_musculus.GRCm38.96.gtf
+Old-H4K20me1-trimmed-pooled_005.stringent.bed
+Young-H4K20me1-trimmed-pooled_005.stringent.bed
+RNA_transformed_tpm_minus_sva_contribs.txt
+
+1) Extract  gene coordinates
+get_gene_coord.py
+
+2) average d0 Aged reps & d0 Young reps
+get_averaged_reps.py
+
+3) get gene coordinates for young/aged gene values
+add_gene_coords.py  
+
+4) get peak/gene intersections
+bedtools intersect -wao -a d0_tpm_rep_averaged_with_coords.bed -b Young-H4K20me1-trimmed-pooled_005.stringent.bed > rna.intersected.with.h4k20me1.young.bed 
+bedtools intersect -wao -a d0_tpm_rep_averaged_with_coords.bed -b Old-H4K20me1-trimmed-pooled_005.stringent.bed > rna.intersected.with.h4k20me1.aged.bed 
+
+5) Summarize intersections
+summarize_intersections.py
