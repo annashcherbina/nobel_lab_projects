@@ -6,5 +6,6 @@ SVM-corrected TPM values for genes with known TF behavior.
 These are homer motifs with significan de novo p-values
 The mapping of TF name to TF family can be found from: "tf_to_family_map.txt"
 
-execute "aggregate_for_plot.py" to form volcano plot inputs
-execute "plot_volcano.R" to plot the volcano plots.
+Execute "aggregate_for_plot.py" to form volcano plot inputs
+
+Execute "plot_volcano.R" to plot the volcano plots.
